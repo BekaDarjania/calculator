@@ -1,4 +1,4 @@
-package com.btu.mycalculator
+package online.thebekka.mycalculator
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.btu.mycalculator", appContext.packageName)
+        assertEquals("online.thebekka.mycalculator", appContext.packageName)
     }
 }

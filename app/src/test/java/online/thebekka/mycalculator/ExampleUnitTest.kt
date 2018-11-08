@@ -1,4 +1,4 @@
-package com.btu.mycalculator
+package online.thebekka.mycalculator
 
 import org.junit.Test
 
