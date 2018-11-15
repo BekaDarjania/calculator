@@ -14,6 +14,7 @@
             android:layout_height="match_parent">
 
         <TextView
+                android:textColor="#000000"
                 android:id="@+id/textView"
                 android:gravity="center|end"
                 android:textSize="52sp"
@@ -46,31 +47,34 @@
                         android:layout_height="wrap_content">
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="7"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton7"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="8"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton8"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="9"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton9"/>
 
                 </LinearLayout>
 
@@ -81,31 +85,34 @@
                         android:layout_height="wrap_content">
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="4"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton4"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="5"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton5"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="6"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton6"/>
 
                 </LinearLayout>
 
@@ -116,31 +123,34 @@
                         android:layout_height="wrap_content">
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="1"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton1"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="2"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton2"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="3"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton3"/>
 
                 </LinearLayout>
 
@@ -151,15 +161,17 @@
                         android:layout_height="wrap_content">
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="0"
                             android:textColor="#ffffff"
                             android:textSize="28sp"
                             android:background="@color/numberButtons"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent" android:id="@+id/numbutton0"/>
 
                     <Button
+                            android:onClick="numButtonPress"
                             android:layout_weight="1"
                             android:text="."
                             android:textColor="#ffffff"
@@ -169,6 +181,7 @@
                             android:layout_height="match_parent"/>
 
                     <Button
+                            android:id="@+id/result"
                             android:layout_weight="1"
                             android:text="="
                             android:textColor="#ffffff"
@@ -189,6 +202,8 @@
                     android:layout_height="match_parent">
 
                 <Button
+                        android:id="@+id/delete"
+
                         android:layout_weight="1"
                         android:text="DEL"
                         android:textColor="#ffffff"
@@ -198,6 +213,7 @@
                         android:layout_height="wrap_content"/>
 
                 <Button
+                        android:onClick="calculationButtonPress"
                         android:layout_weight="1"
                         android:text=":"
                         android:textColor="#ffffff"
@@ -207,6 +223,7 @@
                         android:layout_height="wrap_content"/>
 
                 <Button
+                        android:onClick="calculationButtonPress"
                         android:layout_weight="1"
                         android:text="*"
                         android:textColor="#ffffff"
@@ -216,6 +233,7 @@
                         android:layout_height="wrap_content"/>
 
                 <Button
+                        android:onClick="calculationButtonPress"
                         android:layout_weight="1"
                         android:text="+"
                         android:textColor="#ffffff"
@@ -225,6 +243,7 @@
                         android:layout_height="wrap_content"/>
 
                 <Button
+                        android:onClick="calculationButtonPress"
                         android:layout_weight="1"
                         android:text="-"
                         android:textColor="#ffffff"
