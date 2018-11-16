@@ -64,11 +64,11 @@ class calculator : AppCompatActivity() {
 
         val button = view as Button
 
-        if((button.text.equals("+") || button.text.equals("*") || button.text.equals(":")) && tempVar1.isEmpty()){
+        if((button.text.equals("+") || button.text.equals("*") || button.text.equals(":")) && (tempVar1.isEmpty() || tempVar1.equals("-"))){
 
         }else {
 
-            if (button.text.equals("-") && tempVar2.isEmpty() && tempOperation.isEmpty() && tempVar1.isEmpty()) {
+            if ((button.text.equals("-") && tempVar2.isEmpty() && tempOperation.isEmpty() && tempVar1.isEmpty()) || button.text.equals("-") && tempVar1.equals("-")) {
 
                 tempVar1 = "-"
             } else {
